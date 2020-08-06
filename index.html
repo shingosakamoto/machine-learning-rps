@@ -10,7 +10,7 @@
       body {
         background-color: #586e75;
         color: #fdf6e3;
-        font-family: Helvetica, sans-serif;
+        font-family: Meiryo;
         font-size: 1.3em;
         position: relative;
         text-align: center;
@@ -69,6 +69,9 @@
         font-size: 1.5em;
         width: 200px;
         height: 60px;
+        display:inline-block;
+        border:0.1em solid #000000;
+        font-family:'Roboto';
       }
 
       #safari-warning,
@@ -94,13 +97,13 @@
 
       #wrapper {
         margin: auto;
-        max-width: 1200px;
+        max-width: 1500px;
       }
 
       #webcam,
       #options {
         display: inline-block;
-        max-width: 42%;
+        max-width: 80%;
       }
 
       #webcam {
@@ -132,7 +135,7 @@
     </style>
   </head>
   <body>
-    <h1 id="header">Rock Paper Scissors Lizard Spock</h1>
+    <h1 id="header">Remote Work Gesture Test</h1>
 
     <div id="debug-panel" class="hidden">
       <h2>Debug</h2>
@@ -164,34 +167,6 @@
     <div id="wrapper">
       <video id="webcam"></video>
 
-      <div id="options">
-        <div style="margin: 10px 0 10px 0;">
-          Make a symbol with your hand and we'll speak it to you!
-        </div>
-        <img
-          src="instructions.png"
-          id="instructions-img"
-          alt="examples of how to throw rock, paper, scissors, lizard, or spock"
-        />
-      </div>
-    </div>
-    <div style="clear: both;">
-      <h1 id="spoken-text"></h1>
-      Built with the
-      <a
-        href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier?WT.mc_id=sample-neuralspeech-emwalker"
-        >Azure Custom Vision Service</a
-      >
-      and
-      <a
-        href="https://docs.microsoft.com/en-ca/azure/cognitive-services/speech-service/quickstarts/text-to-speech?WT.mc_id=sample-neuralspeech-emwalker"
-        >Azure Neural Speech Service</a
-      >.
-
-      <p>
-        All video processing happens in your web browser.<br />Your webcam data does
-        not leave your computer.
-      </p>
     </div>
   </body>
 </html>
