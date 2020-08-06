@@ -32,11 +32,11 @@ function startVideoStream() {
 
 function stringForResult(type: ClassificationOption): string {
   const map = {
-    [ClassificationOption.Rock]: "rock",
-    [ClassificationOption.Paper]: "paper",
-    [ClassificationOption.Scissors]: "scissors",
-    [ClassificationOption.Lizard]: "lizard",
-    [ClassificationOption.Spock]: "spock",
+    [ClassificationOption.Rock]: "start recording this meeting",
+    [ClassificationOption.Paper]: "hold on",
+    [ClassificationOption.Scissors]: "ok, let's delete half of the meeting recordings",
+    [ClassificationOption.Lizard]: "",
+    [ClassificationOption.Spock]: "live long and prosper",
     [ClassificationOption.Nothing]: "nothing",
   };
   return map[type];
