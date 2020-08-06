@@ -18,7 +18,6 @@ jobs:
         with:
           submodules: true
       - name: Inject secret keys
-        
         run: |
           sed -i.bak "s/\$(COGNITIVE_SERVICES_SUBSCRIPTION_KEY)/${{ secrets.COGNITIVE_SERVICES_SUBSCRIPTION_KEY}}/" .env
           sed -i.bak "s/\$(COGNITIVE_SERVICES_REGION)/${{ secrets.COGNITIVE_SERVICES_REGION}}/" .env
